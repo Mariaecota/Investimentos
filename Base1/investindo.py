@@ -1,13 +1,27 @@
-print("Olá, mundo!")
-print("Vina esteve aqui")
-print("maria esteve aqui")
-print("Olá, amor!")
-print("oi?")
+import comandos as cm
+import textos as tx
 
-valor = 1000
-ano = 1
-Rendimento_ao_ano = 10/100
+#Inicio do codigo
+codigo = "-1"
+while codigo !="5":
+    cm.limpar_console()
+    codigo = input(tx.menu_inicial)
+    if codigo == "1":
+        cm.limpar_console()
+        input("EM CONSTRUÇÂO, precione ENTER para continuar")
+    elif codigo == "2":
+        cm.limpar_console()
+        input("EM CONSTRUÇÂO, precione ENTER para continuar")
+    elif codigo == "3":
+        cm.limpar_console()
+        input("EM CONSTRUÇÂO, precione ENTER para continuar")
+    elif codigo == "4":
+        cm.limpar_console()
+        input("EM CONSTRUÇÂO, precione ENTER para continuar")
+    elif codigo == "5":
+        cm.limpar_console()
+        print("Fechando...")
 
-soma = valor * Rendimento_ao_ano * ano
-
-print(soma)
+    else:
+        cm.limpar_console()
+        input(f"'{codigo}' - Não é um comando valido, precione ENTER para continuar")
